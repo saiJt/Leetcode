@@ -3,7 +3,7 @@ This function finds the longest palindromic substring in a given string using th
 A palindrome is a string that reads the same forward and backward.
 The key idea is to treat each character (and each gap between characters) as a possible center, then expand outward as long as the characters match.
 
-# Core Idea
+## Core Idea
 For every index i in the string:
 - Treat i as the center of an odd-length palindrome
 - Treat the gap between i and i+1 as the center of an even-length palindrome
@@ -19,7 +19,7 @@ and the palindrome length is:
 right - left - 1
 This formula works for both odd and even palindromes, so no special handling for length is needed.
 
-### Algorithm Steps
+## Algorithm Steps
 1. Get the length of the input string n
 
 2. Initialize:
@@ -37,7 +37,7 @@ right - left - 1
 - Copy the substring starting at start with length maxlen
 - Add the null terminator and return the result
 
-#### For the returned substring
+## For the returned substring
 - Notes on Memory Management
 - The function allocates memory using malloc
 - The caller is responsible for calling free() on the returned string

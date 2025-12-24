@@ -9,7 +9,7 @@ This function finds the length of the longest substring without repeating charac
 - Ensure the window always contains unique characters.
 - Track and update the maximum window length.
 
-### Key Details
+## Key Details
 - Use two pointers (left and right) to represent the current substring window.
 - Use a fixed-size array (seen[256]) to store character frequencies.
 - Increment the count when a character enters the window.

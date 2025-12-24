@@ -15,7 +15,7 @@ class Solution:
             x //= 10
 
             # overflow check
-            if result > int_max // 10 or (result == int_min // 10 and digit > 7):
+            if result > int_max // 10 or (result == int_max // 10 and digit > 7):
                 return 0
                 
             result = result * 10 + digit
@@ -24,4 +24,3 @@ class Solution:
             result = -result
 
         return result
-

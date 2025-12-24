@@ -9,7 +9,7 @@ The zigzag pattern follows a repeating movement:
 - Repeat this process until all characters are placed
 Each row is treated as an independent string buffer.
 
-### Key Observation
+## Key Observation
 - Each character belongs to exactly one row
 - The zigzag pattern can be simulated using:
   - row → current row index
@@ -19,7 +19,7 @@ Each row is treated as an independent string buffer.
   - The bottom row (row == numRows - 1)
 No 2D matrix is required.
 
-### Algorithm Steps
+## Algorithm Steps
 1. Handle the edge case:
 - If numRows == 1, return the original string directly
 2. Initialize:
@@ -35,7 +35,7 @@ No 2D matrix is required.
 - Concatenate all row buffers from top to bottom into a single result string
 5. Return the final converted string
 
-### Notes on Memory Management
+## Notes on Memory Management
 - Memory for row buffers and the result string is allocated using malloc
 - Each row buffer is freed after constructing the final result
 - The caller is responsible for calling free() on the returned string

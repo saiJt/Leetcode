@@ -1,4 +1,4 @@
-# Palindrome Number (C, Half-Reversal Technique)
+# Palindrome Number (C, Python, Half-Reversal Technique)
 - This function determines whether a given integer is a palindrome.
 - A palindrome number reads the same forward and backward.
 - Negative numbers and numbers ending with `0` (except `0` itself) are not palindromes.

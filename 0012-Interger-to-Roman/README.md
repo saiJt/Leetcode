@@ -1,4 +1,4 @@
-# Integer to Roman (C, Greedy with Lookup Table)
+# Integer to Roman (C, Python, Greedy with Lookup Table)
 - This function converts an integer into a Roman numeral.
 - Roman numerals are constructed by appending symbols from the highest value
   to the lowest value.

@@ -1,4 +1,4 @@
-# Zigzag Conversion (C, Row Simulation)
+# Zigzag Conversion (C, Python, Row Simulation)
 This function converts a string into a zigzag pattern on a given number of rows and then reads the result line by line.
 Instead of building the actual zigzag grid, the algorithm simulates the row movement and stores characters directly into row-based buffers.
 

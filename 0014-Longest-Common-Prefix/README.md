@@ -1,4 +1,4 @@
-# Longest Common Prefix (C, Character Scan)
+# Longest Common Prefix (C, Python, Character Scan)
 - This function finds the longest common prefix among an array of strings.
 - Strings are compared character by character using index-based scanning.
 - If a mismatch occurs or a string ends, the prefix terminates immediately.

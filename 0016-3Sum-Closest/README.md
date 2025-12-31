@@ -22,3 +22,15 @@
 4. Use two pointers (`left`, `right`) to evaluate possible sums.
 5. Update the best sum when a closer value is found and adjust pointers based on comparison with the target.
 6. Return the best sum after traversal completes.
+---
+## Sorting with qsort
+- The C standard library function `qsort` is used to sort the array.
+- Since `qsort` is a generic sorting function, it requires a comparator that operates on `void*`.
+
+### Comparator Function
+```c
+int cmp(const void* a, const void* b) {
+    int x = *(const int*)a;
+    int y = *(const int*)b;
+    return (x > y) - (x < y);
+}

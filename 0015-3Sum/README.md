@@ -1,4 +1,4 @@
-# 3Sum (C,Python, Two Pointer)
+# 3Sum (C, Python, Two Pointer)
 - This function solves the 3Sum problem.
 - The solution is based on sorting the array and using the two-pointer technique.
 - The algorithm avoids duplicates by carefully skipping repeated values.

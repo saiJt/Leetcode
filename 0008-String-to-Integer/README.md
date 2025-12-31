@@ -1,4 +1,4 @@
-# String to Integer (atoi) — C, Arithmetic Parsing
+# String to Integer (atoi) — C, Python, Arithmetic Parsing
 
 - This function converts a string into a signed 32-bit integer.
 - Leading whitespace is ignored, followed by an optional sign (`+` or `-`).

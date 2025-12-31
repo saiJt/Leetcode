@@ -1,4 +1,4 @@
-# Reverse Integer (C, Arithmetic Simulation)
+# Reverse Integer (C, Python, Arithmetic Simulation)
 - This function reverses a signed 32-bit integer.
 - If reversing the integer causes it to overflow the 32-bit signed integer range
 [-2^31, 2^31 - 1], the function returns 0.

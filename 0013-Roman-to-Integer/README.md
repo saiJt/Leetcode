@@ -1,4 +1,4 @@
-# Roman to Integer (C, Lookup Table + Scan)
+# Roman to Integer (C, Python, Lookup Table + Scan)
 - This function converts a Roman numeral string into an integer.
 - Roman numerals are processed from left to right.
 - If a smaller value appears before a larger value, it is subtracted.

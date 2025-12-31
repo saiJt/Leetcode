@@ -10,7 +10,7 @@ int threeSumClosest(int* nums, int numsSize, int target) {
     qsort(nums, numsSize,sizeof(int),cmp);
     
     // initialize best sum with a valid combination
-    int max = nums[0] + nums[1] + nums[2];
+    int best = nums[0] + nums[1] + nums[2];
 
     for (int i = 0; i < numsSize - 2; i++) {
         int left = i + 1;
@@ -20,8 +20,8 @@ int threeSumClosest(int* nums, int numsSize, int target) {
             int sum = nums[i] + nums[left] + nums[right];   
             
             // update closest sum
-            if (abs(target - max) > abs(target - sum)) {
-                max = sum;
+            if (abs(target - best) > abs(target - sum)) {
+                best = sum;
             }
 
             // exact match
@@ -37,5 +37,5 @@ int threeSumClosest(int* nums, int numsSize, int target) {
         }
     }
 
-    return max;
+    return best;
 }

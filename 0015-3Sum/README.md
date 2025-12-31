@@ -35,3 +35,8 @@
      - Skip duplicate values for `left` and `right`
 6. Update `returnSize` and `returnColumnSizes` as required by the C interface.
 7. Return the dynamically allocated result array.
+---
+### Note on Overflow
+- The expression `x - y` may cause integer overflow when the values are very large.
+- In most 3Sum problem constraints, this does not affect correctness.
+- For safer comparisons, an overflow-safe form such as `(x > y) - (x < y)` can be used.

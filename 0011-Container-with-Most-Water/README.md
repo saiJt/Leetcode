@@ -1,4 +1,4 @@
-# Container With Most Water (C, Two Pointers Technique)
+# Container With Most Water (C, Python, Two Pointers Technique)
 - This function determines the maximum amount of water that can be stored
   between two vertical lines.
 - Each index represents a vertical line, and its value represents the height.

@@ -61,11 +61,12 @@ int** fourSum(int* nums, int numsSize, int target, int* returnSize, int** return
                     right--;
                     left++;
 
-                    // skip duplicate left
+                    // skip duplicate right
                     while (left < right && nums[right] == nums[right+1]) {
                         right--;
                     }
 
+                    // skip duplicate left
                     while (left <right && nums[left] == nums[left-1]) {
                         left++;
                     }

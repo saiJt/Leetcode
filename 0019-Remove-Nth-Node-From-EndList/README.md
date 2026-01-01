@@ -27,3 +27,8 @@
 ## Notes
 - The dummy node is used only as a fixed reference point and does not belong to the actual list.
 - No dynamic allocation is required for traversal pointers (`slow`, `fast`).
+### Dummy Node Explanation
+In the Python implementation, a dummy node is created using:
+
+```python
+dummy = ListNode(0, head)

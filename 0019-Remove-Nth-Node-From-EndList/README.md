@@ -1,4 +1,4 @@
-# Remove Nth Node From End of List (C, Two Pointers)
+# Remove Nth Node From End of List (C, Python, Two Pointers)
 - This function removes the N-th node from the end of a singly linked list.
 - The solution uses a dummy node and two pointers (`fast` and `slow`).
 - No new list nodes are created; only pointer connections are updated.

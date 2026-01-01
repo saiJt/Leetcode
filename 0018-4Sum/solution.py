@@ -1,0 +1,44 @@
+class Solution:
+    def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+        
+        result = []
+
+        # sort
+        nums.sort()
+        n = len(nums)
+
+        for i in range(n - 3):
+            # skip duplicate i
+            if i > 0 and nums[i] == nums[i-1]: 
+                 continue
+            for j in range (i+1, n- 2):
+                if j > i+1 and nums[j] == nums[j-1]:    
+                    continue
+
+                left = j + 1
+                right= n - 1
+
+                while left < right:
+                    cur_sum = nums[i] + nums[j] + nums[left] + nums[right]
+
+                    if (cur_sum < target):
+                        left += 1
+                    elif (cur_sum > target):
+                        right -= 1 
+                    else:
+                        # store four
+                        result.append([nums[i],nums[j],nums[left],nums[right]])
+
+                        # move pointers
+                        right -= 1
+                        left += 1
+
+                        # skip duplicate right
+                        while left < right and nums[right] == nums[right+1]:
+                            right -= 1
+                        
+                        # skip duplicate left
+                        while left < right and nums [left] == nums[left-1]:
+                            left += 1
+
+        return result

@@ -29,11 +29,11 @@ class Solution:
                     right -= 1
                     left += 1
 
-                    # skip duplicate left
+                    # skip duplicate right
                     while left < right and nums[right] == nums[right + 1]:
                         right -= 1
                     
-                    # skip duplicate right
+                    # skip duplicate left
                     while left < right and nums[left] == nums[left - 1]:
                         left += 1
                 

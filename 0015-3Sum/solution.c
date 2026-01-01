@@ -55,12 +55,12 @@ int** threeSum(int* nums, int numsSize, int* returnSize, int** returnColumnSizes
                 right--;
                 left++;
 
-                // skip duplicate left
+                // skip duplicate right
                 while (left < right && nums[right] == nums[right+1]) {
                     right--;
                 }
 
-                // skip duplicate right
+                // skip duplicate left
                 while (left < right && nums[left] == nums[left-1]) {
                     left++;
                 }

@@ -25,7 +25,7 @@
 - The DFS explores all valid paths by moving forward and returning automatically when recursion ends.
 - In C, backtracking is achieved by **overwriting characters using an index**, not by removing elements.
 ---
-## Why `(char**)malloc(...)` Is Used
+#### Why `(char**)malloc(...)` Is Used
 - The final output is an **array of strings**.
 - Each string is of type `char*`.
 - Therefore, the result container must be of type `char**` (array of `char*`).

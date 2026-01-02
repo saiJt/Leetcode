@@ -1,0 +1,39 @@
+bool isValid(char* s) {
+    if (s == NULL) return false;
+
+    int n = strlen(s);
+    if (n == 0) return true;
+
+    char *stack = (char *)malloc(n);
+    if (stack == NULL) return false;
+
+    int top = 0;   // next free slot (stack size)
+
+    for (int i = 0; i < n; i++) {
+        char c = s[i];
+
+        switch (c) {
+            case '(':
+                stack[top++] = ')';
+                break;
+            case '{':
+                stack[top++] = '}';
+                break;
+            case '[':
+                stack[top++] = ']';
+                break;
+            case ')':
+            case '}':
+            case ']':
+                if (top == 0 || stack[--top] != c) {
+                    free(stack);
+                    return false;
+                }
+                break;
+        }
+    }
+
+    bool valid = (top == 0);
+    free(stack);
+    return valid;
+}

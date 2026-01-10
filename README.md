@@ -1,1 +1,3 @@
 # Leetcode
+# Python
+# C
